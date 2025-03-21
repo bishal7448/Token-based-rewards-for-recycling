@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Rewards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>♻️ Recycling Rewards</h1>
+        <p>Earn and transfer Recycling Rewards Tokens (RRT) for your eco-friendly actions!</p>
+        <button id="connectWallet">Connect Wallet</button>
+        <div id="accountInfo" class="hidden">
+            <p>Connected Account: <span id="accountAddress"></span></p>
+            <p>Balance: <span id="accountBalance"></span> RRT</p>
+        </div>
+        <div class="transfer-section">
+            <h2>Transfer Tokens</h2>
+            <input type="text" id="recipient" placeholder="Recipient Address">
+            <input type="number" id="amount" placeholder="Amount" min="1">
+            <button id="transferBtn">Send RRT</button>
+        </div>
+        <p id="statusMessage"></p>
+    </div>
+</body>
+</html>
